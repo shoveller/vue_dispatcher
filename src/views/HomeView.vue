@@ -9,7 +9,7 @@
 // @ is an alias to /src
 /* import HelloWorld from '@/components/HelloWorld.vue' */
 import TestTest from '@/components/TestTest.vue'
-import axios from 'axios'
+/* import axios from 'axios' */
 
 export default {
   name: 'HomeView',
@@ -21,6 +21,11 @@ export default {
     return {
       userName: 'John Dow'
     }
-  }
+  },
+  setup() { },
+  created() { },
+  mounted() { },
+  unmounted() { },
+  methods: { }
 }
 </script>
