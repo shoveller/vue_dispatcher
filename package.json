@@ -11,7 +11,9 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "pinia": "^2.0.21",
@@ -19,9 +21,17 @@
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
     "@rushstack/eslint-patch": "^1.1.4",
     "@shoveller/eslint-config-vue": "^0.0.15",
     "@shoveller/prettier-config": "^0.0.15",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.3",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue3": "^6.5.12",
     "@types/jsdom": "^20.0.0",
     "@types/node": "^16.11.56",
     "@vitejs/plugin-vue": "^3.0.3",
@@ -29,9 +39,11 @@
     "@vue/eslint-config-typescript": "^11.0.0",
     "@vue/test-utils": "^2.0.2",
     "@vue/tsconfig": "^0.1.3",
+    "babel-loader": "^8.2.5",
     "cypress": "^10.7.0",
     "eslint": "^8.22.0",
     "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-storybook": "^0.6.4",
     "eslint-plugin-vue": "^9.3.0",
     "husky": "^8.0.1",
     "jsdom": "^20.0.0",
@@ -41,7 +53,9 @@
     "start-server-and-test": "^1.14.0",
     "typescript": "~4.7.4",
     "vite": "^3.0.9",
+    "vite-plugin-eslint": "^1.8.1",
     "vitest": "^0.23.0",
+    "vue-loader": "^16.8.3",
     "vue-tsc": "^0.40.7"
   },
   "prettier": "@shoveller/prettier-config",

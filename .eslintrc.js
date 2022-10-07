@@ -9,6 +9,7 @@ module.exports = {
     '@vue/eslint-config-typescript',
     '@vue/eslint-config-prettier',
     '@shoveller/eslint-config-vue',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
