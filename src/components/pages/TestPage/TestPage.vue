@@ -82,8 +82,6 @@ interface Props {
   user: Record<string, unknown>
 }
 
-const props = defineProps<Props>()
-
 interface Emit {
   (e: 'login'): void
 
@@ -91,6 +89,8 @@ interface Emit {
 
   (e: 'createAccount'): void
 }
+
+const props = defineProps<Props>()
 
 const emit = defineEmits<Emit>()
 </script>
