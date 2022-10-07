@@ -38,7 +38,7 @@ const style = computed(() => ({
 }))
 </script>
 
-<style scoped>
+<style>
 .storybook-button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -57,7 +57,7 @@ const style = computed(() => ({
 .storybook-button--secondary {
   color: #333;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;
 }
 
 .storybook-button--small {

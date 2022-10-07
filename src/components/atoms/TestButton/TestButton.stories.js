@@ -1,8 +1,8 @@
-import BasicButton from '@/components/atoms/BasicButton/BasicButton.vue'
+import BasicButton from '@/components/atoms/TestButton/TestButton.vue'
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Basic Button',
+  title: 'atoms/Basic Button',
   component: BasicButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
@@ -24,7 +24,7 @@ const Template = (args) => ({
     return { args }
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<BasicButton :="args" />',
+  template: '<TestButton :="args" size="medium" />',
 })
 
 export const Primary = Template.bind({})

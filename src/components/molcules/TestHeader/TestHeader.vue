@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BasicButton from '@/components/atoms/BasicButton/BasicButton.vue'
+import BasicButton from '@/components/atoms/TestButton/TestButton.vue'
 
 interface Props {
   user: Record<string, unknown>

@@ -1,7 +1,7 @@
 import MyHeader from './TestHeader.vue'
 
 export default {
-  title: 'Example/TestHeader',
+  title: 'molecules/TestHeader',
   component: MyHeader,
 }
 

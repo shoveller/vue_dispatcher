@@ -26,6 +26,7 @@
     "@shoveller/eslint-config-vue": "^0.0.15",
     "@shoveller/prettier-config": "^0.0.15",
     "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-docs": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
