@@ -1,9 +1,9 @@
-import BasicButton from '@/components/atoms/TestButton/TestButton.vue'
+import TestButton from '@/components/atoms/TestButton/TestButton.vue'
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: 'atoms/Basic Button',
-  component: BasicButton,
+  title: 'atoms/TestButton',
+  component: TestButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -18,7 +18,7 @@ export default {
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
 const Template = (args) => ({
   // Components used in your story `template` are defined in the `components` object
-  components: { BasicButton },
+  components: { TestButton },
   // The story's `args` need to be mapped into the template through the `setup()` method
   setup() {
     return { args }

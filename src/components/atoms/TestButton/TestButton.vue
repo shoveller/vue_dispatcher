@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">
+  <button type="button" :class="classes" @click="emit('click')" :style="style">
     {{ label }}
   </button>
 </template>
@@ -21,10 +21,6 @@ interface Emits {
 const props = withDefaults(defineProps<Props>(), { primary: false })
 
 const emit = defineEmits<Emits>()
-
-const onClick = () => {
-  emit('click')
-}
 
 const classes = computed(() => ({
   'storybook-button': true,
