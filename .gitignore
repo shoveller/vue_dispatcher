@@ -35,3 +35,4 @@ yarn.lock
 
 # caches
 .eslintcache
+storybook-static
