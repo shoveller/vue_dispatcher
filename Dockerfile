@@ -1,4 +1,4 @@
-FROM node
+FROM node:16
 
 # pub 디렉토리 생성
 RUN git clone https://github.com/jaehyunlee25/vue_dispatcher
