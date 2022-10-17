@@ -37,6 +37,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             docker stop vue_dispatcher
+            docker rm vue_dispatcher
             docker run -d --rm --name vue_dispatcher cinos81/vue_dispatcher:latest
 
       - name: action-slack
